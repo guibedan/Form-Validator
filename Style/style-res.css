@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c0e28;
+    
+}
+
+
+.main {
+    color: #f5f3ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head {
+    height: 7vh;
+    margin-top: 0px;
+    background-color: #12091b;
+    box-shadow: 0px 10px 40px #00000036;
+}
+
+.head > h2 {
+    font-family: Montserrat;
+    color: #00ff88;
+    align-items: center;
+    margin-top: 17px;
+    padding-left: 10px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sei-não {
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left > div > h1 {
+    font-size: 30pt;
+    padding: 30px;
+    color: #00ff88;
+    font-family: noto sans semibold;
+}
+
+.right > form {
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    background-color: #12091b;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    margin: 10px 0px;
+}
+
+.text > input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1c0e28;
+    color: white;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.text > label {
+    color: white;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+.text > input::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+.text > img {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.text > span {
+    color: #b20000;
+    font-family: noto sans semibold;
+    font-size: 10pt;
+}
+
+.button {
+    background-color: #4D1B7B;
+    width: 60%;
+    padding: 15px 0px;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.button:hover {
+    background-color: #5E3188;
+}
+
+.foot {
+    height: auto;
+}
+
+.foot > footer {
+    background-color: #12091b;
+    flex-direction: column;
+    box-shadow: 0px 10px 40px #00000036;
+}
+
+.foot > footer > ul {
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.list {
+    padding: 5px;
+    font-size: 14pt;
+}
+
+.list {
+    list-style: none;
+    right: 100px;
+}
+
+.list > a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #00ff88;
+}
+
+.list > li {
+    align-items: center;
+    justify-content: center;
+}
+
+.list > img {
+    width: 12%;
+    border-radius: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .right {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .text {
+        width: 85%;
+    }
+    .right {
+        width: 45vw;
+        height: auto;
+    }
+
+    .sei-não {
+        width: auto;
+    }
+    .form {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .form {
+        flex-direction: column;
+    }
+    .left > h1 {
+        font-size: 14pt;
+    }
+    .right {
+        width: 100%;
+        height: auto;
+    }
+    .right {
+        width: 70vw;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .foot {
+        margin-top: 50px;
+    }
+}

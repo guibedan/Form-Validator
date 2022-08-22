@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Validator</title>
+    <link rel="stylesheet" href="/Style/style-res.css">
+    <link rel="icon" href="/Style/img/Screenshot_2.png">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="head">
+            <h2>Seja, Bem vindo!</h2>
+        </div>
+
+
+        <div class="form">
+            <div class="left">
+                <div class="welcome">
+                    <h1>Registrar-se agora!</h1>
+                    <img src="/Style/img/file_13351.gif" alt="">
+                </div>
+            </div>
+
+
+            <div class="sei-não">
+                <div class="right">
+
+                    <form action="/Html/home.html">
+                        <div class="text">
+                            <label>Usuário: </label>
+                            <input type="text" placeholder="usuário" id="login" required>
+                            <span class="error"></span>
+                        </div>
+    
+    
+                        <div class="text">
+                            <label>Email: </label>
+                            <input type="email" placeholder="email" id="email" required>
+                            <span class="error"></span>
+                        </div>
+    
+    
+                        <div class="text">
+                            <label>Senha: </label>
+                            <input type="password" placeholder="senha" id="password" required><img src="/Style/img/eye-slash-solid.svg" id="btn">
+                            <span class="error"></span>
+                        </div>
+
+                        <button class="button" type="submit" onclick="res(); return false">Registrar-se</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <footer>
+                <ul>
+                    <li class="list">
+                        <img src="/Style/img/images.png" title="Contato"><a href="mailto:guilherme_bedan@hotmail.com" title="Contato" target="_blank">Guilherme Bedan</a>
+                    </li>
+                    <li class="list">
+                        <img src="/Style/img/download.png" title="GitHub"><a href="https://github.com/guibedan" title="GitHub" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+        <script src="/Script/script-res.js"></script>
+
+    </div>
+</body>
+</html>
